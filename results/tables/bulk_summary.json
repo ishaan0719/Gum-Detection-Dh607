@@ -1,0 +1,13 @@
+{
+ "bulk_fdr05": 9929,
+ "bulk_fdr05_fc1": 212,
+ "paired_patients": 64,
+ "rho_all": 0.13230951463031018,
+ "rho_sig": 0.23739441799150504,
+ "agree_sig": 0.5355129650507328,
+ "n_sig_concord": 887,
+ "leaky_auc": 0.9241556941556942,
+ "n_ext": 63,
+ "n_ext_healthy": 5,
+ "n_ext_patients": 29
+}

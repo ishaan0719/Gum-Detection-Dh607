@@ -1,0 +1,136 @@
+"donor","condition","cell_type","n_cells","total_cells","proportion"
+"HC1","Healthy","B cells",139,2650,0.0524528301886792
+"HC1","Healthy","Cytotoxic T cells",327,2650,0.123396226415094
+"HC1","Healthy","Endothelial cells",21,2650,0.00792452830188679
+"HC1","Healthy","Epithelial cells",16,2650,0.0060377358490566
+"HC1","Healthy","Erythroid cells",0,2650,0
+"HC1","Healthy","Fibroblasts",66,2650,0.0249056603773585
+"HC1","Healthy","Mast cells",76,2650,0.0286792452830189
+"HC1","Healthy","Monocytes/macrophages",51,2650,0.0192452830188679
+"HC1","Healthy","Neutrophils",308,2650,0.11622641509434
+"HC1","Healthy","NK/cytotoxic lymphocytes",752,2650,0.28377358490566
+"HC1","Healthy","Pericytes/smooth-muscle-like",14,2650,0.00528301886792453
+"HC1","Healthy","Plasma cells",26,2650,0.00981132075471698
+"HC1","Healthy","Proliferating cells",3,2650,0.00113207547169811
+"HC1","Healthy","T cells",831,2650,0.313584905660377
+"HC1","Healthy","Uncertain myeloid-like",20,2650,0.00754716981132075
+"HC2","Healthy","B cells",307,2343,0.131028595817328
+"HC2","Healthy","Cytotoxic T cells",466,2343,0.198890311566368
+"HC2","Healthy","Endothelial cells",7,2343,0.00298762270593257
+"HC2","Healthy","Epithelial cells",17,2343,0.00725565514297909
+"HC2","Healthy","Erythroid cells",3,2343,0.00128040973111396
+"HC2","Healthy","Fibroblasts",30,2343,0.0128040973111396
+"HC2","Healthy","Mast cells",44,2343,0.0187793427230047
+"HC2","Healthy","Monocytes/macrophages",87,2343,0.0371318822023047
+"HC2","Healthy","Neutrophils",46,2343,0.019632949210414
+"HC2","Healthy","NK/cytotoxic lymphocytes",662,2343,0.28254374733248
+"HC2","Healthy","Pericytes/smooth-muscle-like",4,2343,0.00170721297481861
+"HC2","Healthy","Plasma cells",23,2343,0.009816474605207
+"HC2","Healthy","Proliferating cells",32,2343,0.0136577037985489
+"HC2","Healthy","T cells",557,2343,0.237729406743491
+"HC2","Healthy","Uncertain myeloid-like",58,2343,0.0247545881348698
+"HC3","Healthy","B cells",413,3582,0.115298715801228
+"HC3","Healthy","Cytotoxic T cells",47,3582,0.0131211613623674
+"HC3","Healthy","Endothelial cells",4,3582,0.00111669458403127
+"HC3","Healthy","Epithelial cells",4,3582,0.00111669458403127
+"HC3","Healthy","Erythroid cells",0,3582,0
+"HC3","Healthy","Fibroblasts",132,3582,0.0368509212730318
+"HC3","Healthy","Mast cells",91,3582,0.0254048017867113
+"HC3","Healthy","Monocytes/macrophages",136,3582,0.0379676158570631
+"HC3","Healthy","Neutrophils",466,3582,0.130094919039643
+"HC3","Healthy","NK/cytotoxic lymphocytes",12,3582,0.0033500837520938
+"HC3","Healthy","Pericytes/smooth-muscle-like",5,3582,0.00139586823003908
+"HC3","Healthy","Plasma cells",816,3582,0.227805695142379
+"HC3","Healthy","Proliferating cells",11,3582,0.00307091010608599
+"HC3","Healthy","T cells",1395,3582,0.389447236180905
+"HC3","Healthy","Uncertain myeloid-like",50,3582,0.0139586823003908
+"HC4","Healthy","B cells",175,3106,0.0563425627817128
+"HC4","Healthy","Cytotoxic T cells",962,3106,0.309723116548616
+"HC4","Healthy","Endothelial cells",70,3106,0.0225370251126851
+"HC4","Healthy","Epithelial cells",4,3106,0.00128783000643915
+"HC4","Healthy","Erythroid cells",2,3106,0.000643915003219575
+"HC4","Healthy","Fibroblasts",79,3106,0.0254346426271732
+"HC4","Healthy","Mast cells",18,3106,0.00579523502897617
+"HC4","Healthy","Monocytes/macrophages",46,3106,0.0148100450740502
+"HC4","Healthy","Neutrophils",127,3106,0.040888602704443
+"HC4","Healthy","NK/cytotoxic lymphocytes",362,3106,0.116548615582743
+"HC4","Healthy","Pericytes/smooth-muscle-like",2,3106,0.000643915003219575
+"HC4","Healthy","Plasma cells",19,3106,0.00611719253058596
+"HC4","Healthy","Proliferating cells",17,3106,0.00547327752736639
+"HC4","Healthy","T cells",1210,3106,0.389568576947843
+"HC4","Healthy","Uncertain myeloid-like",13,3106,0.00418544752092724
+"PD1","Periodontitis","B cells",332,3629,0.0914852576467346
+"PD1","Periodontitis","Cytotoxic T cells",285,3629,0.0785340314136126
+"PD1","Periodontitis","Endothelial cells",636,3629,0.175254891154588
+"PD1","Periodontitis","Epithelial cells",161,3629,0.0443648387985671
+"PD1","Periodontitis","Erythroid cells",0,3629,0
+"PD1","Periodontitis","Fibroblasts",264,3629,0.0727473133094516
+"PD1","Periodontitis","Mast cells",124,3629,0.0341691926150455
+"PD1","Periodontitis","Monocytes/macrophages",287,3629,0.0790851474235326
+"PD1","Periodontitis","Neutrophils",228,3629,0.06282722513089
+"PD1","Periodontitis","NK/cytotoxic lymphocytes",137,3629,0.037751446679526
+"PD1","Periodontitis","Pericytes/smooth-muscle-like",73,3629,0.0201157343620832
+"PD1","Periodontitis","Plasma cells",431,3629,0.118765500137779
+"PD1","Periodontitis","Proliferating cells",150,3629,0.0413337007440066
+"PD1","Periodontitis","T cells",509,3629,0.140259024524662
+"PD1","Periodontitis","Uncertain myeloid-like",12,3629,0.00330669605952053
+"PD2","Periodontitis","B cells",524,2782,0.188353702372394
+"PD2","Periodontitis","Cytotoxic T cells",270,2782,0.0970524802300503
+"PD2","Periodontitis","Endothelial cells",193,2782,0.0693745506829619
+"PD2","Periodontitis","Epithelial cells",72,2782,0.0258806613946801
+"PD2","Periodontitis","Erythroid cells",0,2782,0
+"PD2","Periodontitis","Fibroblasts",82,2782,0.0294751976994968
+"PD2","Periodontitis","Mast cells",18,2782,0.00647016534867002
+"PD2","Periodontitis","Monocytes/macrophages",152,2782,0.0546369518332135
+"PD2","Periodontitis","Neutrophils",325,2782,0.116822429906542
+"PD2","Periodontitis","NK/cytotoxic lymphocytes",54,2782,0.0194104960460101
+"PD2","Periodontitis","Pericytes/smooth-muscle-like",87,2782,0.0312724658519051
+"PD2","Periodontitis","Plasma cells",388,2782,0.139468008626887
+"PD2","Periodontitis","Proliferating cells",29,2782,0.0104241552839684
+"PD2","Periodontitis","T cells",524,2782,0.188353702372394
+"PD2","Periodontitis","Uncertain myeloid-like",64,2782,0.0230050323508267
+"PD3","Periodontitis","B cells",67,2051,0.0326669917113603
+"PD3","Periodontitis","Cytotoxic T cells",299,2051,0.145782545099951
+"PD3","Periodontitis","Endothelial cells",267,2051,0.130180399804973
+"PD3","Periodontitis","Epithelial cells",37,2051,0.0180399804973184
+"PD3","Periodontitis","Erythroid cells",0,2051,0
+"PD3","Periodontitis","Fibroblasts",93,2051,0.04534373476353
+"PD3","Periodontitis","Mast cells",131,2051,0.0638712823013164
+"PD3","Periodontitis","Monocytes/macrophages",91,2051,0.0443686006825939
+"PD3","Periodontitis","Neutrophils",3,2051,0.00146270112140419
+"PD3","Periodontitis","NK/cytotoxic lymphocytes",166,2051,0.0809361287176987
+"PD3","Periodontitis","Pericytes/smooth-muscle-like",74,2051,0.0360799609946368
+"PD3","Periodontitis","Plasma cells",157,2051,0.0765480253534861
+"PD3","Periodontitis","Proliferating cells",9,2051,0.00438810336421258
+"PD3","Periodontitis","T cells",627,2051,0.305704534373476
+"PD3","Periodontitis","Uncertain myeloid-like",30,2051,0.0146270112140419
+"PD4","Periodontitis","B cells",26,4380,0.00593607305936073
+"PD4","Periodontitis","Cytotoxic T cells",509,4380,0.1162100456621
+"PD4","Periodontitis","Endothelial cells",563,4380,0.128538812785388
+"PD4","Periodontitis","Epithelial cells",157,4380,0.0358447488584475
+"PD4","Periodontitis","Erythroid cells",0,4380,0
+"PD4","Periodontitis","Fibroblasts",5,4380,0.00114155251141553
+"PD4","Periodontitis","Mast cells",150,4380,0.0342465753424658
+"PD4","Periodontitis","Monocytes/macrophages",524,4380,0.119634703196347
+"PD4","Periodontitis","Neutrophils",1662,4380,0.379452054794521
+"PD4","Periodontitis","NK/cytotoxic lymphocytes",214,4380,0.0488584474885845
+"PD4","Periodontitis","Pericytes/smooth-muscle-like",24,4380,0.00547945205479452
+"PD4","Periodontitis","Plasma cells",95,4380,0.021689497716895
+"PD4","Periodontitis","Proliferating cells",29,4380,0.00662100456621005
+"PD4","Periodontitis","T cells",383,4380,0.0874429223744292
+"PD4","Periodontitis","Uncertain myeloid-like",39,4380,0.0089041095890411
+"PD5","Periodontitis","B cells",69,2749,0.0251000363768643
+"PD5","Periodontitis","Cytotoxic T cells",136,2749,0.0494725354674427
+"PD5","Periodontitis","Endothelial cells",478,2749,0.173881411422335
+"PD5","Periodontitis","Epithelial cells",52,2749,0.018915969443434
+"PD5","Periodontitis","Erythroid cells",35,2749,0.0127319025100036
+"PD5","Periodontitis","Fibroblasts",73,2749,0.0265551109494362
+"PD5","Periodontitis","Mast cells",131,2749,0.0476536922517279
+"PD5","Periodontitis","Monocytes/macrophages",122,2749,0.0443797744634413
+"PD5","Periodontitis","Neutrophils",80,2749,0.0291014914514369
+"PD5","Periodontitis","NK/cytotoxic lymphocytes",174,2749,0.0632957439068752
+"PD5","Periodontitis","Pericytes/smooth-muscle-like",19,2749,0.00691160421971626
+"PD5","Periodontitis","Plasma cells",947,2749,0.344488905056384
+"PD5","Periodontitis","Proliferating cells",28,2749,0.0101855220080029
+"PD5","Periodontitis","T cells",391,2749,0.142233539468898
+"PD5","Periodontitis","Uncertain myeloid-like",14,2749,0.00509276100400145

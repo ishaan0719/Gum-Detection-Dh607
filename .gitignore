@@ -1,0 +1,6 @@
+data/raw/
+data/processed/
+data/external/
+.DS_Store
+.RData
+.Rhistory

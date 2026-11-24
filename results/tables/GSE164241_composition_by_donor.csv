@@ -1,0 +1,181 @@
+"donor","condition","cell_type","n","prop"
+"GM136","Healthy","B cells",19,0.0107466063348416
+"GM136","Healthy","Endothelial cells",683,0.38631221719457
+"GM136","Healthy","Epithelial cells",66,0.0373303167420814
+"GM136","Healthy","Fibroblasts",650,0.367647058823529
+"GM136","Healthy","Mast cells",28,0.0158371040723982
+"GM136","Healthy","Monocytes/macrophages",149,0.0842760180995475
+"GM136","Healthy","Neutrophils",3,0.00169683257918552
+"GM136","Healthy","Pericytes/smooth muscle",60,0.0339366515837104
+"GM136","Healthy","Plasma cells",32,0.0180995475113122
+"GM136","Healthy","T/NK cells",78,0.0441176470588235
+"GM143","Healthy","B cells",1,0.000636942675159236
+"GM143","Healthy","Endothelial cells",845,0.538216560509554
+"GM143","Healthy","Epithelial cells",74,0.0471337579617834
+"GM143","Healthy","Fibroblasts",315,0.200636942675159
+"GM143","Healthy","Mast cells",72,0.045859872611465
+"GM143","Healthy","Monocytes/macrophages",98,0.0624203821656051
+"GM143","Healthy","Neutrophils",35,0.0222929936305732
+"GM143","Healthy","Pericytes/smooth muscle",73,0.0464968152866242
+"GM143","Healthy","Plasma cells",25,0.0159235668789809
+"GM143","Healthy","T/NK cells",32,0.0203821656050955
+"GM144","Healthy","B cells",11,0.00539480137322217
+"GM144","Healthy","Endothelial cells",1004,0.492398234428642
+"GM144","Healthy","Epithelial cells",126,0.0617949975478176
+"GM144","Healthy","Fibroblasts",265,0.129965669445807
+"GM144","Healthy","Mast cells",117,0.0573810691515449
+"GM144","Healthy","Monocytes/macrophages",73,0.0358018636586562
+"GM144","Healthy","Neutrophils",0,0
+"GM144","Healthy","Pericytes/smooth muscle",145,0.0711132908288377
+"GM144","Healthy","Plasma cells",16,0.00784698381559588
+"GM144","Healthy","T/NK cells",282,0.138303089749877
+"GM147","Healthy","B cells",19,0.0105790645879733
+"GM147","Healthy","Endothelial cells",664,0.369710467706013
+"GM147","Healthy","Epithelial cells",58,0.032293986636971
+"GM147","Healthy","Fibroblasts",444,0.247216035634744
+"GM147","Healthy","Mast cells",74,0.0412026726057906
+"GM147","Healthy","Monocytes/macrophages",58,0.032293986636971
+"GM147","Healthy","Neutrophils",9,0.00501113585746102
+"GM147","Healthy","Pericytes/smooth muscle",112,0.0623608017817372
+"GM147","Healthy","Plasma cells",35,0.0194877505567929
+"GM147","Healthy","T/NK cells",323,0.179844097995546
+"GM148","Healthy","B cells",19,0.00475
+"GM148","Healthy","Endothelial cells",1064,0.266
+"GM148","Healthy","Epithelial cells",177,0.04425
+"GM148","Healthy","Fibroblasts",2033,0.50825
+"GM148","Healthy","Mast cells",106,0.0265
+"GM148","Healthy","Monocytes/macrophages",146,0.0365
+"GM148","Healthy","Neutrophils",47,0.01175
+"GM148","Healthy","Pericytes/smooth muscle",148,0.037
+"GM148","Healthy","Plasma cells",50,0.0125
+"GM148","Healthy","T/NK cells",210,0.0525
+"GM169","Healthy","B cells",26,0.0065
+"GM169","Healthy","Endothelial cells",1331,0.33275
+"GM169","Healthy","Epithelial cells",460,0.115
+"GM169","Healthy","Fibroblasts",794,0.1985
+"GM169","Healthy","Mast cells",129,0.03225
+"GM169","Healthy","Monocytes/macrophages",140,0.035
+"GM169","Healthy","Neutrophils",2,5e-04
+"GM169","Healthy","Pericytes/smooth muscle",546,0.1365
+"GM169","Healthy","Plasma cells",55,0.01375
+"GM169","Healthy","T/NK cells",517,0.12925
+"GM183","Healthy","B cells",1,0.000388198757763975
+"GM183","Healthy","Endothelial cells",1081,0.419642857142857
+"GM183","Healthy","Epithelial cells",322,0.125
+"GM183","Healthy","Fibroblasts",832,0.322981366459627
+"GM183","Healthy","Mast cells",42,0.016304347826087
+"GM183","Healthy","Monocytes/macrophages",101,0.0392080745341615
+"GM183","Healthy","Neutrophils",2,0.00077639751552795
+"GM183","Healthy","Pericytes/smooth muscle",58,0.0225155279503106
+"GM183","Healthy","Plasma cells",91,0.0353260869565217
+"GM183","Healthy","T/NK cells",46,0.0178571428571429
+"GM184","Healthy","B cells",0,0
+"GM184","Healthy","Endothelial cells",626,0.451333813987022
+"GM184","Healthy","Epithelial cells",101,0.0728190338860851
+"GM184","Healthy","Fibroblasts",409,0.294881038211968
+"GM184","Healthy","Mast cells",8,0.00576784426820476
+"GM184","Healthy","Monocytes/macrophages",60,0.0432588320115357
+"GM184","Healthy","Neutrophils",2,0.00144196106705119
+"GM184","Healthy","Pericytes/smooth muscle",126,0.0908435472242249
+"GM184","Healthy","Plasma cells",8,0.00576784426820476
+"GM184","Healthy","T/NK cells",47,0.033886085075703
+"GM238","Healthy","B cells",175,0.04375
+"GM238","Healthy","Endothelial cells",1010,0.2525
+"GM238","Healthy","Epithelial cells",203,0.05075
+"GM238","Healthy","Fibroblasts",754,0.1885
+"GM238","Healthy","Mast cells",152,0.038
+"GM238","Healthy","Monocytes/macrophages",255,0.06375
+"GM238","Healthy","Neutrophils",82,0.0205
+"GM238","Healthy","Pericytes/smooth muscle",226,0.0565
+"GM238","Healthy","Plasma cells",197,0.04925
+"GM238","Healthy","T/NK cells",946,0.2365
+"GM241","Healthy","B cells",5,0.00125
+"GM241","Healthy","Endothelial cells",1817,0.45425
+"GM241","Healthy","Epithelial cells",142,0.0355
+"GM241","Healthy","Fibroblasts",809,0.20225
+"GM241","Healthy","Mast cells",35,0.00875
+"GM241","Healthy","Monocytes/macrophages",116,0.029
+"GM241","Healthy","Neutrophils",0,0
+"GM241","Healthy","Pericytes/smooth muscle",304,0.076
+"GM241","Healthy","Plasma cells",58,0.0145
+"GM241","Healthy","T/NK cells",714,0.1785
+"GM242","Healthy","B cells",22,0.0055
+"GM242","Healthy","Endothelial cells",1195,0.29875
+"GM242","Healthy","Epithelial cells",377,0.09425
+"GM242","Healthy","Fibroblasts",1145,0.28625
+"GM242","Healthy","Mast cells",212,0.053
+"GM242","Healthy","Monocytes/macrophages",194,0.0485
+"GM242","Healthy","Neutrophils",63,0.01575
+"GM242","Healthy","Pericytes/smooth muscle",219,0.05475
+"GM242","Healthy","Plasma cells",50,0.0125
+"GM242","Healthy","T/NK cells",523,0.13075
+"GM283","Healthy","B cells",483,0.12075
+"GM283","Healthy","Endothelial cells",787,0.19675
+"GM283","Healthy","Epithelial cells",564,0.141
+"GM283","Healthy","Fibroblasts",353,0.08825
+"GM283","Healthy","Mast cells",66,0.0165
+"GM283","Healthy","Monocytes/macrophages",216,0.054
+"GM283","Healthy","Neutrophils",47,0.01175
+"GM283","Healthy","Pericytes/smooth muscle",150,0.0375
+"GM283","Healthy","Plasma cells",216,0.054
+"GM283","Healthy","T/NK cells",1118,0.2795
+"GM289","Healthy","B cells",110,0.0325059101654846
+"GM289","Healthy","Endothelial cells",917,0.270981087470449
+"GM289","Healthy","Epithelial cells",158,0.0466903073286052
+"GM289","Healthy","Fibroblasts",452,0.133569739952719
+"GM289","Healthy","Mast cells",102,0.0301418439716312
+"GM289","Healthy","Monocytes/macrophages",118,0.0348699763593381
+"GM289","Healthy","Neutrophils",3,0.000886524822695035
+"GM289","Healthy","Pericytes/smooth muscle",80,0.0236406619385343
+"GM289","Healthy","Plasma cells",777,0.229609929078014
+"GM289","Healthy","T/NK cells",667,0.19710401891253
+"PD134","Periodontitis","B cells",90,0.0325262016624503
+"PD134","Periodontitis","Endothelial cells",365,0.131911817853271
+"PD134","Periodontitis","Epithelial cells",18,0.00650524033249006
+"PD134","Periodontitis","Fibroblasts",290,0.104806649801229
+"PD134","Periodontitis","Mast cells",121,0.043729671123961
+"PD134","Periodontitis","Monocytes/macrophages",298,0.10769786772678
+"PD134","Periodontitis","Neutrophils",2,0.000722804481387785
+"PD134","Periodontitis","Pericytes/smooth muscle",42,0.0151788941091435
+"PD134","Periodontitis","Plasma cells",446,0.161185399349476
+"PD134","Periodontitis","T/NK cells",1095,0.395735453559812
+"PD153","Periodontitis","B cells",37,0.0172253258845438
+"PD153","Periodontitis","Endothelial cells",675,0.314245810055866
+"PD153","Periodontitis","Epithelial cells",173,0.0805400372439479
+"PD153","Periodontitis","Fibroblasts",676,0.314711359404097
+"PD153","Periodontitis","Mast cells",62,0.0288640595903166
+"PD153","Periodontitis","Monocytes/macrophages",203,0.0945065176908752
+"PD153","Periodontitis","Neutrophils",6,0.00279329608938547
+"PD153","Periodontitis","Pericytes/smooth muscle",45,0.0209497206703911
+"PD153","Periodontitis","Plasma cells",140,0.0651769087523277
+"PD153","Periodontitis","T/NK cells",131,0.0609869646182495
+"PD161","Periodontitis","B cells",60,0.0118882504458094
+"PD161","Periodontitis","Endothelial cells",1110,0.219932633247474
+"PD161","Periodontitis","Epithelial cells",446,0.0883693283138498
+"PD161","Periodontitis","Fibroblasts",1252,0.248068159302556
+"PD161","Periodontitis","Mast cells",200,0.0396275014860313
+"PD161","Periodontitis","Monocytes/macrophages",282,0.0558747770953041
+"PD161","Periodontitis","Neutrophils",28,0.00554785020804438
+"PD161","Periodontitis","Pericytes/smooth muscle",174,0.0344759262928472
+"PD161","Periodontitis","Plasma cells",484,0.0958985535961958
+"PD161","Periodontitis","T/NK cells",1011,0.200317020011888
+"PD164","Periodontitis","B cells",482,0.0401666666666667
+"PD164","Periodontitis","Endothelial cells",2104,0.175333333333333
+"PD164","Periodontitis","Epithelial cells",148,0.0123333333333333
+"PD164","Periodontitis","Fibroblasts",1745,0.145416666666667
+"PD164","Periodontitis","Mast cells",164,0.0136666666666667
+"PD164","Periodontitis","Monocytes/macrophages",632,0.0526666666666667
+"PD164","Periodontitis","Neutrophils",15,0.00125
+"PD164","Periodontitis","Pericytes/smooth muscle",235,0.0195833333333333
+"PD164","Periodontitis","Plasma cells",3074,0.256166666666667
+"PD164","Periodontitis","T/NK cells",3401,0.283416666666667
+"PD170","Periodontitis","B cells",179,0.04475
+"PD170","Periodontitis","Endothelial cells",462,0.1155
+"PD170","Periodontitis","Epithelial cells",34,0.0085
+"PD170","Periodontitis","Fibroblasts",561,0.14025
+"PD170","Periodontitis","Mast cells",117,0.02925
+"PD170","Periodontitis","Monocytes/macrophages",414,0.1035
+"PD170","Periodontitis","Neutrophils",16,0.004
+"PD170","Periodontitis","Pericytes/smooth muscle",63,0.01575
+"PD170","Periodontitis","Plasma cells",1200,0.3
+"PD170","Periodontitis","T/NK cells",954,0.2385

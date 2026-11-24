@@ -1,0 +1,30 @@
+{
+ "concordance": {
+  "A_vs_B": {
+   "rho_all": -0.20499172478435082,
+   "n_both_sig": 233,
+   "direction_agreement_both_sig": 0.2832618025751073
+  },
+  "A_vs_bulk": {
+   "rho_all": 0.13756152966208995,
+   "n_both_sig": 641,
+   "direction_agreement_both_sig": 0.5460218408736349
+  },
+  "B_vs_bulk": {
+   "rho_all": 0.19183556586483183,
+   "n_both_sig": 1900,
+   "direction_agreement_both_sig": 0.671578947368421
+  },
+  "replicated_up": 39,
+  "replicated_down": 0
+ },
+ "scRNA_ml": {
+  "random_cell_split_AUC": 0.9422542387894832,
+  "LODO_cell_AUC": 0.4964860977775286,
+  "LODO_cell_accuracy": 0.547594602522734,
+  "LODO_donor_accuracy": 0.6666666666666666,
+  "LODO_donor_AUC": 0.7,
+  "pseudobulk_LOO_accuracy": 1.0,
+  "pseudobulk_LOO_AUC": 1.0
+ }
+}
