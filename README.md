@@ -2,8 +2,6 @@
 
 **Periodontitis at single-cell resolution: what changes, and what replicates?**
 
-Ishaan Srivastava (23B2187), Neha Kanwadiya (23B1852)
-
 <p align="center">
   <img src="docs/images/normal_vs_periodontitis.webp" alt="Healthy gums compared with periodontitis: inflamed gums, gum recession, and plaque and tartar buildup" width="640">
 </p>
