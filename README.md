@@ -1,125 +1,127 @@
-# GumDetective
+<div align="center">
 
-**Periodontitis at single-cell resolution: what changes, and what replicates?**
+# 🦷 GumDetective
 
-Ishaan Srivastava (23B2187) · Neha Kanwadiya (23B1852)
+### Periodontitis at single-cell resolution: what changes, and what replicates?
 
-GumDetective compares healthy gum tissue (gingiva) with periodontitis using single-cell and bulk transcriptomics. We find disease-related changes in one single-cell dataset, then test whether they hold up in three independent cohorts. Every test treats the **donor or patient as the unit, never the individual cell**.
+**Ishaan Srivastava** (23B2187) · **Neha Kanwadiya** (23B1852)
 
-## Hypothesis
+![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r&logoColor=white)
+![Seurat](https://img.shields.io/badge/Seurat-5-1C7C78)
+![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![Data](https://img.shields.io/badge/data-GEO%20(4%20cohorts)-B5503F)
 
-> Periodontitis is associated with changes in periodontal cell populations and gene expression.
+</div>
 
-**Verdict:** supported for gene expression, and partly supported for cell populations.
+<p align="center">
+  <img src="docs/images/normal_vs_periodontitis.webp" alt="Healthy gums and tooth compared with periodontitis: red, inflamed gums, gum recession, and plaque and tartar buildup" width="720">
+</p>
 
-| Part of the hypothesis | Verdict | Evidence |
-|---|---|---|
-| Gene expression changes | Supported | 9,929 genes change in 247 biopsies; 39 genes up in all three cohorts; THBS1, CYR61, CXCL6 replicate; classifiers reach AUC 0.93 (0.90–0.99 on new patients) |
-| Cell populations change | Partly supported | No significant shift in the 9-donor discovery cohort; plasma cells and macrophages rise in both single-cell cohorts (significant in the larger one); endothelial, pericyte, epithelial and T-cell shifts reverse |
-| Single-cell signature carries over to bulk tissue | Weak | Significant but small (AUC 0.63); not confirmed in the external cohort |
+**Periodontitis** is a chronic inflammatory gum disease that destroys the tissue and bone holding the teeth. We used single-cell and bulk RNA data to find which cells and genes change in diseased gums, then tested every finding in three independent cohorts. Throughout, the **donor or patient is the unit of analysis, never the individual cell**.
 
-## Key results
+---
 
-1. **Cells are not replicates.** The original paper's cell-level Wilcoxon test gives 4,054 significant gene–cell-type hits (2,389 unique genes). Donor-level pseudobulk with edgeR gives 14.
-2. **Cell composition.** Plasma cells and monocytes/macrophages increase in both single-cell cohorts (FDR 0.02 in GSE164241). The endothelial increase and T-cell decrease seen in the discovery cohort reverse in the validation cohort.
-3. **Candidate genes.** Of the 14 donor-level genes, THBS1, CYR61 and CXCL6 are up and significant in every cohort. SELL matches in direction only (p = 0.08 in GSE164241). The neutrophil genes LTF, CAMP and PGLYRP1 do not replicate.
-4. **Pathways.** In bulk tissue, inflammatory and chemokine signalling go up and epidermis/keratinocyte genes go down. In the discovery cohort, neutrophils show NF-κB and osteoclast-differentiation pathways, and plasma cells show antibody-secretion machinery (single cohort, so interpretation only).
-5. **Bulk tissue.** 9,929 genes differ between diseased and healthy sites in GSE10334 (FDR < 0.05); 39 genes are up in all three cohorts and none is consistently down. The single-cell tissue signature separates sites only weakly (AUC 0.63, p = 0.002; 0.61 in GSE16134).
-6. **Tests before ML.** A 50-gene DE score reaches AUC 0.91 under patient-grouped cross-validation; logistic regression and linear SVM reach 0.93. On 29 new patients the models reach 0.90–0.99, with only 5 healthy samples in that set.
-7. **Donor leakage.** A cell-level classifier scores AUC 0.94 with a random cell split but 0.50 when each donor is held out, so it was recognising donors, not disease.
+## 🎯 Hypothesis and verdict
 
-## Data
+> *Periodontitis is associated with changes in periodontal cell populations and gene expression.*
 
-All data are public on GEO. They are not stored in this repository (`data/` is git-ignored).
+| Part | Verdict | Evidence |
+|---|:---:|---|
+| Gene expression changes | ✅ **Supported** | 9,929 genes change in 247 biopsies · 39 genes up in all 3 cohorts · AUC 0.93 |
+| Cell populations change | 🟡 **Partly** | Plasma cells ↑ and macrophages ↑ in both cohorts; four other shifts reverse |
+| scRNA signature works in bulk | 🔴 **Weak** | AUC 0.63, not confirmed externally |
 
-| Role | Dataset | Type | Samples |
+## 🔬 Key results
+
+| # | Finding |
+|:---:|---|
+| 1 | **Cells are not replicates:** cell-level testing gives 4,054 hits; donor-level pseudobulk gives **14** |
+| 2 | **Cells:** plasma cells and macrophages rise in both single-cell cohorts; endothelial and T-cell trends reverse |
+| 3 | **Genes:** **THBS1, CYR61, CXCL6** replicate in every cohort; neutrophil genes do not |
+| 4 | **Pathways:** inflammation up, epithelial structure down; NF-κB and osteoclast pathways in neutrophils |
+| 5 | **Bulk tissue:** strong signal (9,929 genes), but the scRNA signature alone is weak (AUC 0.63) |
+| 6 | **Tests vs ML:** simple DE score **0.91** vs logistic regression/SVM **0.93**; 0.90–0.99 on 29 new patients |
+| 7 | **Leakage:** single-cell classifier drops from **0.94** (random split) to **0.50** on unseen donors |
+
+## 📦 Data
+
+All public on GEO; not stored here (`data/` is git-ignored).
+
+| Role | Dataset | Type | Size |
 |---|---|---|---|
-| Discovery | [GSE171213](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE171213) | scRNA-seq | 4 healthy (HC1–4) vs 5 untreated periodontitis (PD1–5) donors; 27,272 cells after QC (from 45,191); 3 post-treatment donors excluded |
-| Validation | [GSE164241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164241) | scRNA-seq (10x) | 13 healthy vs 5 periodontitis donors |
-| Validation + ML training | [GSE10334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10334) | Microarray, GPL570 | 247 biopsies from 90 patients |
-| External test | [GSE16134](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE16134) | Microarray, GPL570 | 63 independent samples from 29 patients |
+| Discovery | [GSE171213](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE171213) | scRNA-seq | 4 healthy vs 5 periodontitis donors · 27,272 cells |
+| Validation | [GSE164241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164241) | scRNA-seq | 13 healthy vs 5 periodontitis donors |
+| Validation + ML | [GSE10334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10334) | Microarray | 247 biopsies · 90 patients |
+| External test | [GSE16134](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE16134) | Microarray | 63 samples · 29 new patients |
 
-**Duplicate check.** GSE16134 re-uploads 245 GSE10334 arrays under new sample IDs. Script 17 finds them by correlating rank-transformed expression profiles and removes every affected patient, so the external test shares no samples with the training data.
+> ⚠️ GSE16134 re-uploads **245** GSE10334 arrays under new IDs. Script 17 detects and removes them so the external test is truly independent.
 
-Place the downloaded files as follows before running:
+<details>
+<summary>Where to put the downloaded files</summary>
 
 ```
 data/raw/GSE171213_AllSample.counts.tsv.gz
 data/external/GSE10334_series_matrix.txt.gz
 data/external/GSE16134_series_matrix.txt.gz
 data/external/GPL570.annot.gz
-data/external/GSE164241/   # the GM/PD 10x files: *_matrix.mtx.gz, *_barcodes.tsv.gz, *_features.tsv.gz (or *_genes.tsv.gz)
+data/external/GSE164241/   # 10x files: *_matrix.mtx.gz, *_barcodes.tsv.gz, *_features.tsv.gz
+```
+</details>
+
+## ⚙️ Pipeline
+
+Run `scripts/01` → `24` in order from the project root.
+
+```
+QC & filtering  →  Clustering & labels  →  Donor-level DE  →  Replication  →  Pathways  →  Tests, then ML
+   (01–08)            (09–11)              (12–16, 20)       (17, 22–23)      (19)          (21, 23)
 ```
 
-## Pipeline
-
-Run the scripts from the project root, in order.
-
-| Step | Script(s) | What it does |
-|---|---|---|
-| 01–02 | `01_inspect_data.R`, `02_preview_counts.R` | Inspect the GEO files and preview the count matrix |
-| 03–04 | `03_convert_counts.py`, `04_select_primary_samples.py` | Convert counts to a sparse matrix; keep HC1–4 and PD1–5 |
-| 05–08 | `05_calculate_qc.py` … `08_export_for_seurat.py` | QC metrics per cell and donor; filter (>200 genes, <25% mitochondrial, donor-specific upper limits); export for Seurat |
-| 09–11 | `09_seurat_clustering.R` … `11_annotate_clusters.R` | Normalise, 2,000 variable genes, PCA (30), UMAP and clustering (20 PCs, resolution 0.5), marker genes, cell-type labels |
-| 12 | `12_pseudobulk_de.R` | Donor × cell-type pseudobulk DE with edgeR (quasi-likelihood F-test) |
-| 13 | `13_plot_candidate_genes.R` | Plots of the candidate genes |
-| 14–15 | `14_compare_paper_qc.py`, `15_paper_style_de.R` | Reproduce the paper's QC and cell-level Wilcoxon DE (Chen et al.) |
-| 16 | `16_cell_type_composition.R` | Cell-type proportions per donor; Mann–Whitney tests with BH FDR |
-| 17 | `17_prepare_bulk_validation.py` | Parse bulk cohorts, collapse probes to genes, detect GSE16134 duplicates |
-| 18 | `18_export_for_ml.R` | Export HVG matrix, metadata and pseudobulk for ML |
-| 19 | `19_pathway_enrichment.py` | Enrichr GO/KEGG enrichment per cell type and in bulk |
-| 20 | `20_tissue_pseudobulk_de.R` | Tissue-level pseudobulk DE |
-| 21 | `21_bulk_validation_and_ml.py` | Bulk DE, signature tests, hypothesis tests vs logistic regression, SVM and random forest (patient-grouped 5-fold CV × 5), external test |
-| 22 | `22_validation_scRNA_GSE164241.R` | Same QC, labelling, composition and pseudobulk DE on GSE164241 |
-| 23 | `23_cross_dataset_and_scRNA_ml.py` | Cross-cohort replication; single-cell classifier with random split vs leave-one-donor-out |
-| 24 | `24_make_figures.py` | Final figures in `results/figures/final` |
-
-## Results in this repository
-
-All outputs are committed, so the findings can be read without re-running the pipeline.
-
-**Figures** (`results/figures/final`)
-
-| File | Shows |
+| Scripts | Step |
 |---|---|
-| `fig1_umap.png` | UMAP of annotated cell types and condition (GSE171213) |
-| `fig2_composition_two_cohorts.png` | Per-donor cell-type proportions in both single-cell cohorts |
-| `fig3_de_method_comparison.png` | Cell-level Wilcoxon vs donor-level pseudobulk hits per cell type |
-| `fig4_candidate_replication.png` | Heatmap of the 14 candidate genes across three cohorts |
-| `fig5_enrichment.png` | Enriched GO/KEGG terms by cell type |
-| `fig6_bulk_volcano.png` | Volcano plot of GSE10334 biopsies |
-| `fig7_ml_bulk_comparison.png` | ROC-AUC and balanced accuracy: tests vs ML, with external test |
-| `fig8_roc_bulk.png` | Out-of-fold ROC curves in GSE10334 |
-| `fig9_leakage.png` | Cell-level classifier under random vs donor-held-out validation |
+| 01–08 | Select HC1–4 / PD1–5, QC (>200 genes, <25% mito), filter, export |
+| 09–11 | Seurat: normalise, PCA, UMAP, clustering, cell-type labels |
+| 12, 20 | edgeR pseudobulk DE per cell type and per tissue |
+| 13–16 | Candidate plots, paper-style Wilcoxon reproduction, composition tests |
+| 17, 22 | Bulk cohort parsing + duplicate check; GSE164241 validation |
+| 18–19 | ML export; Enrichr GO/KEGG enrichment |
+| 21, 23 | Bulk tests vs LR/SVM/RF (patient-grouped CV), cross-cohort replication, leakage test |
+| 24 | Final figures |
 
-**Main tables** (`results/tables`)
+## 📊 Results in this repository
 
-| File | Contents |
+Everything is committed, so you can read the findings without running anything.
+
+**Figures** · `results/figures/final/`
+
+| Figure | Shows |
 |---|---|
-| `DE_all_cell_types.csv` | Donor-level pseudobulk DE for every cell type |
-| `DE_paper_style_wilcoxon.csv` | Reproduced cell-level Wilcoxon DE |
-| `cell_type_proportion_tests.csv`, `composition_two_scRNA_cohorts.csv` | Composition tests in one and both single-cell cohorts |
-| `candidate_genes_replication.csv` | The 14 candidate genes in all three cohorts |
-| `replicated_genes_three_cohorts.csv` | The 39 genes up in all three cohorts |
-| `DE_bulk_GSE10334.csv`, `enrichment_bulk_GSE10334.csv` | Bulk DE and enrichment |
-| `signature_validation_bulk.csv` | Single-cell gene sets tested in bulk |
-| `ml_bulk_cv_summary.csv`, `ml_bulk_external_test.csv` | Cross-validation and external-test performance |
-| `ml_scRNA_LODO_donor_predictions.csv` | Leave-one-donor-out predictions per donor |
-| `bulk_summary.json`, `cross_dataset_summary.json` | Headline numbers |
+| `fig1_umap` | Cell types and condition on UMAP |
+| `fig2_composition_two_cohorts` | Per-donor cell proportions, both cohorts |
+| `fig3_de_method_comparison` | Cell-level vs donor-level DE hits |
+| `fig4_candidate_replication` | 14 candidate genes across 3 cohorts |
+| `fig5_enrichment` | Enriched pathways by cell type |
+| `fig6_bulk_volcano` | Bulk biopsies volcano plot |
+| `fig7_ml_bulk_comparison` | Tests vs ML performance |
+| `fig8_roc_bulk` | ROC curves |
+| `fig9_leakage` | Random split vs held-out donors |
 
-## Environment
+**Key tables** · `results/tables/`
 
-- R 4.x with Seurat 5 and edgeR
-- Python 3 with pandas, scipy, scikit-learn, statsmodels, matplotlib and gseapy (Enrichr queries need internet access)
+| Table | Contents |
+|---|---|
+| `DE_all_cell_types.csv` | Donor-level DE, all cell types |
+| `composition_two_scRNA_cohorts.csv` | Cell composition tests |
+| `candidate_genes_replication.csv` | Candidate genes in 3 cohorts |
+| `replicated_genes_three_cohorts.csv` | The 39 shared genes |
+| `signature_validation_bulk.csv` | scRNA signatures tested in bulk |
+| `ml_bulk_cv_summary.csv` · `ml_bulk_external_test.csv` | ML results |
 
-The single-cell steps need substantial memory. Script 22 down-samples GSE164241 to at most 4,000 cells per sample, which keeps cell-type proportions.
+## 🧰 Environment, limitations and next steps
 
-## Limitations
+**Environment:** R 4.x (Seurat 5, edgeR) · Python 3 (pandas, scipy, scikit-learn, statsmodels, matplotlib, gseapy). Single-cell steps need plenty of memory; Enrichr needs internet.
 
-- The discovery cohort is small (4 vs 5 donors), so moderate composition shifts cannot be detected there.
-- The external test set holds only 5 healthy samples, so its AUCs carry wide confidence intervals.
-- The cohorts differ in sampling, technology and annotation depth.
-- Ambient RNA and doublets are not removed beyond the QC thresholds.
-- Single-cell pathway results come from one cohort.
+**Limitations:** small discovery cohort (4 vs 5 donors) · only 5 healthy samples in the external test · cohorts differ in sampling and technology · no dedicated ambient-RNA/doublet removal.
 
-**Next steps:** ambient-RNA and doublet removal, more donors, analysis of the three post-treatment donors, and protein-level validation of THBS1, CYR61 and CXCL6.
+**Next steps:** ambient-RNA and doublet removal · more donors · analyse post-treatment donors · protein-level validation of THBS1, CYR61, CXCL6.
